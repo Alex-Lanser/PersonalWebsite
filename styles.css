@@ -5,6 +5,7 @@
 header{
     font-family: "Nunito", sans-serif;
     font-size: 56px;
+    text-align: center;
 }
 
 .navbar {
@@ -14,6 +15,7 @@ header{
     width: 100%;
     right: 0;
     left: 0;
+    top: 0;
 }
 
 .navbar a{
@@ -34,6 +36,10 @@ header{
 
 .navbar a.image {
     float: right;
+}
+
+.navbar a.active{
+    background-color: #777;
 }
 
 .linkedin {
