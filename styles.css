@@ -1,4 +1,4 @@
-﻿.navbar {
+﻿.navbar{
     overflow: hidden;
     background-color: #333;
     position: fixed;
@@ -24,25 +24,26 @@
     color: black;
 }
 
-.navbar a.image {
+.navbar a.image{
     float: right;
+    margin: auto;
 }
 
 .navbar a.active{
     background-color: #777;
 }
 
-.linkedin {
+.linkedin{
     height: 25px;
     width: 25px;   
 }
 
-.github {
+.github{
     height: 25px;
     width: 25px;
 }
 
-h1.resume {
+h1.resume{
     font-family: "Ubuntu", sans-serif;
     font-size: 52px;
     text-align: center; 
@@ -63,8 +64,29 @@ body.resume{
     background-color: #888;
 }
 
-img.resume {
+img.resume{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 8px outset #999;
+}
+
+img.personalphoto{
+    display: inline-block;
+    height: 400px;
+    width: 320px;
+    overflow: hidden;
+    margin-top: 60px;
+    padding-left: 20%;
+}
+
+p.intro{
+    border: 10px inset black;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: central;
+    padding: 1em;
+    overflow: hidden;
+
 }
