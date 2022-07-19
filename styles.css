@@ -24,6 +24,10 @@
     color: black;
 }
 
+.navbar a:active{
+    color: #ffffff;
+}
+
 .navbar a.image{
     float: right;
     margin: auto;
@@ -68,7 +72,7 @@ img.resume{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 8px outset #999;
+    border: 10px outset #999;
 }
 
 img.personalphoto{
@@ -81,11 +85,15 @@ img.personalphoto{
 }
 
 p.intro{
-    border: 10px inset black;
+    border: 10px solid black;
     font-family: "Ubuntu", sans-serif;
     font-size: 24px;
     display: inline-block;
     vertical-align: central;
     padding: 1em;
     overflow: hidden;
+}
+
+body.home{
+    
 }
