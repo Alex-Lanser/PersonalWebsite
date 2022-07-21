@@ -22,10 +22,14 @@
 .navbar a:hover{
     background: #ddd;
     color: black;
+    transition: color .15s ease-in, background .15s ease-in;
 }
 
 .navbar a:active{
-    color: #ffffff;
+    color: black;
+    background-color: #fff;
+    transform: scale(1.1);
+    transition: background-color .1s ease-in-out;
 }
 
 .navbar a.image{
