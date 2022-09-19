@@ -77,6 +77,8 @@ img.resume{
     margin-left: auto;
     margin-right: auto;
     border: 10px outset #999;
+    width: 45%;
+    height: auto;
 }
 
 img.personalphoto{
@@ -96,8 +98,33 @@ p.intro{
     vertical-align: central;
     padding: 1em;
     overflow: hidden;
+    margin-bottom: 5em;
+}
+
+p.aboutMe{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    height: 10em;
+    position: absolute;
+    margin: 0;
+    margin-top: 8em;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+div.topBanner {
+    background-color: #999;
+    border-bottom: 5px solid black;
+    width: 100%;
+    overflow: hidden;
 }
 
 body.home{
-    
+    left: 0;
+    right: 0;
+    margin: 0;
+    border: 0;
 }
+
