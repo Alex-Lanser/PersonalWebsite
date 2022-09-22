@@ -16,5 +16,45 @@
         <a class="image" href="https://github.com/Alex-Lanser"><img class="github" src="images/github.png" alt="GitHub" /></a>
         <a class="image" href="https://www.linkedin.com/in/alex-lanser/"><img class="linkedin" src="images/linkedin.png" alt="LinkedIn" /></a>
     </div>
+    <div class="projects">
+        <h1 class="projects">Alex's Project Gallery</h1>
+        <h2 class="projects">Projects will be from classes taken at MSOE and internships.</h2>
+        <hr class="projects">
+
+        <video id="myVideo" class="projects1" controls>
+            <source src="images/numberGuesser.mp4" type="video/mp4">
+        </video>
+        <p class="projects">
+            <strong>Number Guessing Game</strong>
+            <br/>
+            <span style="font-size:18px;">This was on the embedded system that we got
+            as sophomore CE students. This specific project was to have the system show
+            a binary number on the red LEDs. The user would then have to guess what that
+            number was on the keypad. The system would then let the user know if their guess
+            was correct or incorrect by playing a tone and printing to the LCD screen. After 
+            5 rounds, the system would print to the LCD screen how many rounds the user won.<br/>
+            <i>Coding language: C and ARM Assembly</i></span>
+        </p>
+        <br/>
+
+        <video id="myVideo" class="projects" controls>
+            <source src="images/virtualLock.mp4" type="video/mp4">
+        </video>
+        <p class="projects">
+            <strong>Embedded System Lock</strong>
+            <br/>
+            <span style="font-size: 18px;">This was also on the embedded system that we got
+            as sophomore CE students. This specific project was to create a lock that was
+            put as a constant in the code and have the user guess the passcode. When the user
+            guessed, the system will print to the LCD screen if the passcode was correct or not,
+            play a certain tone, and flash the LED lights.<br/>
+            <i>Coding language: C and ARM Assembly</i></span>
+        </p>
+
+        <script>
+            var vid = document.getElementById("myVideo");
+            vid.volume = 0.1;
+        </script>
+    </div>
 </body>
 </html>

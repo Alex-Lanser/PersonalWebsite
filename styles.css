@@ -6,6 +6,7 @@
     right: 0;
     left: 0;
     top: 0;
+    margin-bottom: 5em;
 }
 
 .navbar a{
@@ -128,3 +129,66 @@ body.home{
     border: 0;
 }
 
+body.projects{
+    left: 0;
+    right: 0;
+    margin: 0;
+    border: 0;
+    background-color: #888;
+}
+
+h1.projects{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 52px;
+    text-align: center; 
+    padding: 50px 0 0 50px;;
+    line-height: 20%;
+}
+
+h2.projects{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 0 0 0 50px;
+}
+
+hr.projects{
+    border: 3px solid black;
+}
+
+video.projects1{
+    width: 15%;
+    height: 15%;
+    -moz-transform:rotate(-90deg);
+    -webkit-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    transform:rotate(-90deg);
+    margin-left: 10em;
+    margin-right: 10em;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+video.projects{
+    width: 26%;
+    height: 26%;
+    margin-left: 3em;
+    margin-right: 3em;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+p.projects{
+    display: inline-block;
+    vertical-align: center;
+    overflow: hidden;
+    padding-bottom: 3em;
+    font-size: 24px;
+    font-family: "Ubuntu", sans-serif;
+    width: 20em;
+    text-align: center;
+}
