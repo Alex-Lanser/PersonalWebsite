@@ -191,8 +191,18 @@ p.projects{
     font-family: "Ubuntu", sans-serif;
     width: 20em;
     text-align: center;
+    z-index: 1;
 }
 
 div.projects{
     margin-left: 3em;
+}
+
+video.projectsVert{
+    width: 13%;
+    height: 13%;
+    margin-right: 3em;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
 }
