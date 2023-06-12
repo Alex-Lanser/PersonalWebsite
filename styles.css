@@ -73,3 +73,9 @@ body {
     padding: 10px;
     border: 1px
   }  
+
+  input::placeholder,
+  textarea::placeholder {
+  font-family: "Arial", sans-serif;
+  color: #999; 
+}

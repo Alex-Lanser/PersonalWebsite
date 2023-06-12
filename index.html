@@ -12,6 +12,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="https://www.linkedin.com/in/alex-lanser/">LinkedIn</a></li>
       </ul>
     </nav>
   </header>
@@ -40,10 +41,10 @@
   <section id="contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Message"></textarea>
+      <form method="POST" action="send_email.php">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
