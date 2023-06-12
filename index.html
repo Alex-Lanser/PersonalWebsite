@@ -1,36 +1,58 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Ubuntu&display=swap" rel="stylesheet" />
-    <title>Alex Lanser</title>
+  <meta charset="UTF-8">
+  <title>Alex Lanser</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="home">
-    <div class="navbar">
-        <a class="active" href="index.html">About Me</a>
-        <a href="projects.html">Project Gallery</a>
-        <a href ="resume.html">Resume</a>
-        <a class="image" href="mailto: alanser@icloud.com">Send an Email</a>
-        <a class="image" href="https://github.com/Alex-Lanser"><img class="github" src="images/github.png" alt="GitHub" /></a>
-        <a class="image" href="https://www.linkedin.com/in/alex-lanser/"><img class="linkedin" src="images/linkedin.png" alt="LinkedIn" /></a>
-    </div>
-    <div class="topBanner">
-        <img class="personalphoto" src="images/Photo_of_alex.jpg" alt="Alex Lanser" />
-        <p class="intro"><strong>Hello, I'm Alex Lanser. </strong><br />I am currently a junior at MSOE for BS in Computer Engineering.<br />I am based in Milwakee and am passionate in development.</p>
-    </div>
-    <div>
-        <p class="aboutMe">Originally from the Chicagoland area, I moved to Milwaukee in 2020 to pursue an education in Computer Engineering after taking a digital electronic class in high school.<br />
-           I had a very hard decision originally, however, when choosing schools. I could go to MSOE, which is a strong engineering school, or I could go to Rose-Hulman, another strong engineering school <br />
-           Milwaukee was my final choice because it was closer to home, and I felt that I fit in there more. <br />
-           My first year was a good year, as I had met a good group of friends, and began to see what I could possibly be doing in the future. <br />
-           It wasn't until my second year when I actually began to look forward to school, as it was finally in person again due to Covid-19 the year before. <br />
-           I took embedded system classes throughout the whole year, where we learned how to code in C and ARM assembly. This is by far one of my favorite class I have taken so far. <br />
-           I have also always been interested in web development, so I also took a class in the spring which was an introduction to web development. This class began to increase my interest more. <br />
-           I am currently taking a front-end development course online, and am also learning about blockchains and blockchain development in Solidity.
-        </p>
-    </div>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <section id="about">
+    <div class="container">
+      <h1>About Me</h1>
+      <p>Type info here</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Project 1</p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Project 2</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Alex Lanser's Personal Website. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>

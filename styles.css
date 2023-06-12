@@ -1,208 +1,75 @@
-﻿.navbar{
-    overflow: hidden;
+﻿/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header Styles */
+  header {
     background-color: #333;
-    position: fixed;
-    width: 100%;
-    right: 0;
-    left: 0;
-    top: 0;
-    margin-bottom: 5em;
-    z-index: 100;
-}
-
-.navbar a{
-    height: 25px;
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
     text-decoration: none;
-    font-family: "Nunito", sans-serif;
-}
+    transition: color 0.3s ease;
+  }
 
-.navbar a:hover{
-    background: #ddd;
-    color: black;
-    transition: color .15s ease-in, background .15s ease-in;
-}
-
-.navbar a:active{
-    color: black;
+  nav ul li a:hover {
+    color: #00ABFF; /* Change to your desired hover color */
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  section h1,
+  section h2,
+  section h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .project {
+    margin-bottom: 20px;
     background-color: #fff;
-    transform: scale(1.1);
-    transition: background-color .1s ease-in-out;
-}
-
-.navbar a.image{
-    float: right;
-    margin: auto;
-}
-
-.navbar a.active{
-    background-color: #777;
-}
-
-.linkedin{
-    height: 25px;
-    width: 25px;   
-}
-
-.github{
-    height: 25px;
-    width: 25px;
-}
-
-h1.resume{
-    font-family: "Ubuntu", sans-serif;
-    font-size: 52px;
-    text-align: center; 
-    padding: 50px 0 0 0;
-    line-height: 20%;
-}
-
-h2.resume{
-    font-family: "Ubuntu", sans-serif;
-    font-size: 24px;
-    text-align: center;
-    line-height: 10%;
-    padding: 0 0 20px 0;
-    font-style: italic;
-}
-
-body.resume{
-    background-color: #888;
-}
-
-img.resume{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 10px outset #999;
-    width: 45%;
-    height: auto;
-}
-
-img.personalphoto{
-    display: inline-block;
-    height: 400px;
-    width: 320px;
-    overflow: hidden;
-    margin-top: 60px;
-    padding-left: 20%;
-}
-
-p.intro{
-    border: 10px solid black;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 24px;
-    display: inline-block;
-    vertical-align: central;
-    padding: 1em;
-    overflow: hidden;
-    margin-bottom: 5em;
-}
-
-p.aboutMe{
-    font-family: "Ubuntu", sans-serif;
-    font-size: 20px;
-    height: 10em;
-    position: absolute;
-    margin: 0;
-    margin-top: 8em;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-div.topBanner {
-    background-color: #999;
-    border-bottom: 5px solid black;
-    width: 100%;
-    overflow: hidden;
-}
-
-body.home{
-    left: 0;
-    right: 0;
-    margin: 0;
-    border: 0;
-}
-
-body.projects{
-    left: 0;
-    right: 0;
-    margin: 0;
-    border: 0;
-    background-color: #888;
-}
-
-h1.projects{
-    font-family: "Ubuntu", sans-serif;
-    font-size: 52px;
-    text-align: center; 
-    padding: 50px 0 0 50px;;
-    line-height: 20%;
-}
-
-h2.projects{
-    font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
-    text-align: center;
-    padding: 0 0 0 50px;
-}
-
-hr.projects{
-    border: 3px solid black;
-}
-
-video.projects1{
-    width: 15%;
-    height: 15%;
-    -moz-transform:rotate(-90deg);
-    -webkit-transform:rotate(-90deg);
-    -o-transform:rotate(-90deg);
-    -ms-transform:rotate(-90deg);
-    transform:rotate(-90deg);
-    margin-left: 5%;
-    margin-right: 10em;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
-}
-
-video.projects{
-    width: 26%;
-    height: 26%;
-    margin-right: 3em;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    z-index: 0;
-}
-p.projects{
-    display: inline-block;
-    vertical-align: center;
-    overflow: hidden;
-    padding-bottom: 3em;
-    font-size: 24px;
-    font-family: "Ubuntu", sans-serif;
-    width: 20em;
-    text-align: center;
-    z-index: 1;
-}
-
-div.projects{
-    margin-left: 3em;
-}
-
-video.projectsVert{
-    width: 13%;
-    height: 13%;
-    margin-right: 3em;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-}
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px
+  }  
