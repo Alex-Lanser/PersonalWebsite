@@ -1,5 +1,7 @@
 ﻿html {
     scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -116,4 +118,19 @@ input::placeholder,
 textarea::placeholder {
     font-family: "Arial", sans-serif;
     color: #999;
+}
+
+footer {
+    background-color: #333;
+    padding: 1px;
+    text-align: left;
+}
+
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+section:last-of-type {
+    margin-bottom: 0;
 }
