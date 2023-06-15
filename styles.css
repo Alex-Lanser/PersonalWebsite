@@ -111,7 +111,7 @@ textarea {
     border: 1px;
     font-family: "Arial", sans-serif;
     width: 200px;
-    height: 50px;
+    height: 100px;
     resize: none;
 }
 
@@ -142,9 +142,9 @@ section:last-of-type {
 
 #charCount {
     position: absolute;
-    bottom: -20px;
     font-size: 10px;
     color: gray;
+    margin-top: 215px;
 }
 
 .message-container {
