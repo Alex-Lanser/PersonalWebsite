@@ -136,10 +136,6 @@ section:last-of-type {
     margin-bottom: 0;
 }
 
-.exceeded {
-    color: #F00;
-}
-
 #charCount {
     position: absolute;
     font-size: 10px;

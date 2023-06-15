@@ -8,5 +8,12 @@ document.addEventListener("DOMContentLoaded", function () {
         var remainingChars = maxLength - currentLength;
 
         charCount.textContent = remainingChars + " characters remaining";
+
+        if (remainingChars == 0) {
+            document.getElementById("charCount").style.color = "red";
+        }
+        else {
+            document.getElementById("charCount").style.color = "gray"; 
+        }
     });
 });
