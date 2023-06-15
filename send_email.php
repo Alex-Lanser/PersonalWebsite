@@ -11,12 +11,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
   // Send the email
   $success = mail($to, $subject, $message, $headers);
-  
-  if ($success) {
-    echo '<script>alert("Message sent successfully!");</script>';
-  } else {
-    echo '<script>alert("Sorry, an error occurred. Please try again.");</script>';
-  }
 
   // Database connection details
   $host = "localhost"; 
@@ -40,9 +34,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Close the statement and database connection
   $stmt->close();
   $conn->close();
-  
-  // Redirect back to the contact page or show a success message
-  header("Location: index.html");
-  exit();
+
+  // Set up email parameters
+  $to = $email;
+  $subject = "Thank you for your message regarding Alex Lanser";
+  $body = "Dear $name,\n\nThank you for your message and your time. I will get back to you shortly!\n\nThanks,\nAlex Lanser";
+  $headers = "From: alexlanser02@gmail.com"; 
+
+  // Send the email
+  $mailSent = mail($to, $subject, $body, $headers);
+
+  // Check if the email was sent successfully
+  if ($mailSent) {
+    // Email sent successfully, redirect the user back to index.html
+    header("Location: index.html");
+    exit;
+  } else {
+    // Email failed to send, handle the error (e.g., display an error message)
+    echo "Oops! An error occurred while sending the email. Please try again later.";
+  }
 }
 ?>
