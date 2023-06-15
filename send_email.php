@@ -26,14 +26,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
   // Create a new database connection
   $conn = new mysqli($host, $username, $password, $dbname);
-  
+
   // Check the connection
   if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
   
   // Prepare and execute the database query
-  $stmt = $conn->prepare("INSERT INTO contacts (name, email, message) VALUES (?, ?, ?)");
+  $stmt = $conn->prepare("INSERT INTO contacts (name, email, message) VALUES ('$name', '$email', '$message')");
   $stmt->bind_param("sss", $name, $email, $message);
   $stmt->execute();
   
