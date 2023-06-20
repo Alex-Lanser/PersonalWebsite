@@ -2,12 +2,13 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $name = $_POST["name"];
   $email = $_POST["email"];
-  $message = $_POST["message"];
+  $message = "New message from: $name <$email>" . "\r" . $_POST["message"];
+  // $message = $_POST["message"];
   
   $to = "alexlanser02@gmail.com"; 
   $subject = "NEW MESSAGE FROM YOUR WEBSITE";
   $headers = "From: $name <$email>" . "\r\n";
-  
+
   
   // Send the email
   $success = mail($to, $subject, $message, $headers);
