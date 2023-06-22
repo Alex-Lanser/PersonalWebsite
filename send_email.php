@@ -12,6 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   
   // Send the email
   $success = mail($to, $subject, $message, $headers);
+  $successMessage = 'Message sent successfully!';
+  echo '<script>alert("' . $successMessage . '");</script>';
 
   // Database connection details
   $host = "localhost"; 
@@ -45,14 +47,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Send the email
   $mailSent = mail($to, $subject, $body, $headers);
 
-  // Check if the email was sent successfully
-  if ($mailSent) {
-    // Email sent successfully, redirect the user back to index.html
-    header("Location: index.html");
-    exit;
-  } else {
-    // Email failed to send, handle the error (e.g., display an error message)
-    echo "Oops! An error occurred while sending the email. Please try again later.";
-  }
+  // Redirect to index.html
+  echo '<script>window.location.href = "index.html";</script>';
+  exit();
 }
 ?>
