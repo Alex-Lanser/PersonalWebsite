@@ -232,4 +232,20 @@ footer {
     padding: 20px;
     text-align: left;
     margin-left: 50px;
+    display: flex;
+}
+
+.social-icons { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
 }
