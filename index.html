@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <script src="script.js"></script>
   <script src="scroll.js"></script>
+  <script src="tb.js"></script>
 </head>
 
 <body>
@@ -157,11 +158,11 @@
     <div class="container">
       <h2>Contact Me</h2>
       <form method="POST" action="send_email.php">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
+        <input id="name" type="text" name="name" placeholder="Your Name" required>
+        <input id="email" type="email" name="email" placeholder="Your Email" required>
         <textarea id="message" name="message" placeholder="Your Message" maxlength="200" required></textarea>
         <span id="charCount">200 characters remaining</span>
-        <button class="animate-button">Send Message</button>
+        <button id="submit-btn" class="animate-button">Send Message</button>
       </form>
     </div>
   </section>
