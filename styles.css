@@ -8,7 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #eaeaea;
 }
 
 .container {
@@ -18,8 +18,8 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #0c0c0c;
+    color: #eaeaea;
     padding: 10px;
 }
 
@@ -27,7 +27,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: #dddace;
     width: 100%;
     padding: 10px 0;
     z-index: 100;
@@ -47,16 +47,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #0c0c0c;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 nav ul li a:hover {
-    color: #00ABFF;
+    color: #035b7a;
 }
 
-/* Section Styles */
 section {
     padding: 40px 0;
     text-align: center;
@@ -65,13 +66,13 @@ section {
 section h1,
 section h2 {
     margin-top: 0;
-    color: black;
+    color: #0c0c0c;
     text-decoration: underline;
 }
 
 section h3 {
     margin-top: 0;
-    color: black;
+    color: #212121;
 }
 
 .project {
@@ -91,7 +92,7 @@ section h3 {
 
 .project p {
     font-size: 16px;
-    color: #888;
+    color: #212121;
 }
 
 form {
@@ -123,25 +124,10 @@ textarea::placeholder {
     color: #999;
 }
 
-footer {
-    background-color: #333;
-    padding: 1px;
-    text-align: left;
-}
-
-footer p {
-    margin: 0;
-    color: #fff;
-}
-
-section:last-of-type {
-    margin-bottom: 0;
-}
-
 #charCount {
     position: absolute;
     font-size: 10px;
-    color: gray;
+    color: #212121;
     margin-top: 215px;
 }
 
@@ -149,20 +135,16 @@ section:last-of-type {
     position: relative;
 }
 
-button {
-    margin-top: 5px;
-}
-
 .project a {
-    font-size: 10px;
-    color: gray;
+    font-size: 12px;
+    color: #00447c;
     font-family: 'Roboto', sans-serif;
 }
 
 .container p {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    color: gray;
+    color: #212121;
 }
 
 .scrolling {
@@ -173,4 +155,81 @@ button {
 .embedded {
     height: 75%;
     width: 75%;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-list {
+    columns: 3;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.skills-list li {
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+    font-size: 18px;
+}
+
+.container li {
+    font-family: 'Roboto', sans-serif;
+    color: #212121;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+#title {
+    font-family: 'Roboto', sans-serif;
+    color: #0c0c0c;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 0px;
+}
+
+.sidebar-left,
+.sidebar-right {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    background-color: #c6c3b6;
+}
+
+.sidebar-left {
+    left: 0;
+}
+
+.sidebar-right {
+    right: 0;
+}
+
+.animate-button {
+    padding: 10px 20px;
+    background-color: #dddace;
+    border: none;
+    transition: transform 0.3s ease;
+    margin-top: 5px;
+}
+
+.animate-button:hover {
+    transform: scale(1.1);
+    margin-top: 5px;
+}
+
+.animate-button:active {
+    transform: scale(0.9);
+    margin-top: 5px;
+}
+
+footer {
+    background-color: #c6c3b6;
+    color: #0c0c0c;
+    padding: 20px;
+    text-align: left;
+    margin-left: 50px;
 }

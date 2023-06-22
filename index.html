@@ -13,12 +13,15 @@
 </head>
 
 <body>
+  <div class="sidebar-left"></div>
+  <div class="sidebar-right"></div>
   <header>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="https://www.linkedin.com/in/alex-lanser/" target="_blank">LinkedIn</a></li>
       </ul>
     </nav>
@@ -76,8 +79,7 @@
         <h3>3D Image Displayer</h3>
         <img src="images/dolphin.png" alt="3D Dolphin">
         <br>
-        <a class="project" href="https://github.com/Alex-Lanser/CS3210/tree/master/Lab09"
-          target="_blank">Project's
+        <a class="project" href="https://github.com/Alex-Lanser/CS3210/tree/master/Lab09" target="_blank">Project's
           Github</a>
         <p>Computer Graphics at MSOE C++ project.</p>
         <p>Display a read STL file in 3D. Be able to perform transforms on the image including rotating, scaling and
@@ -107,6 +109,49 @@
     </div>
   </section>
 
+  <section id="skills">
+    <div class="container">
+      <h2>Skills & Experience</h2>
+      <h3>Skills</h3>
+      <div class="skills-container">
+        <ul class="skills-list">
+          <li>C</li>
+          <li>C++</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+          <li>PHP</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>Embedded Systems</li>
+          <li>ARM Assembly</li>
+          <li>VHDL</li>
+          <li>Intel Quartus</li>
+          <li>Intel FPGAs</li>
+          <li>Digital Logic</li>
+        </ul>
+      </div>
+      <br><br>
+      <h3>Experience</h3>
+      <div class="container">
+        <p id="title">Intern at Digital Design Corporation for 2 summers.</p>
+        <li>Used a raspberry pi to create tests for multiple of their future products</li>
+        <li>Clear and update tickets for a program that was used to test more of their products</li>
+        <li>Solder components on and off of boards that failed in the field</li>
+        <br>
+        <p id="title">Student at MSOE for 3 years</p>
+        <li>Took 4 Java courses learning basic software development, data structures, and working in a team of software
+          developers</li>
+        <li>Took 3 C courses working with embedded systems, threads and design of operating systems</li>
+        <li>Took 1 C++ course working with vectors and matrices used in computer graphics</li>
+        <li>Took 2 web developments courses working with HTML, CSS, JavaScript, PHP, and SQL</li>
+        <li>Took 7 hardware classes working with basic and advanced electrical circuits, digital electronics,
+          transients, and signals and systems</li>
+        <li>Took 2 digital logic courses specificallty working with VHDL and registers</li>
+      </div>
+    </div>
+  </section>
   <section id="contact">
     <div class="container">
       <h2>Contact Me</h2>
@@ -115,10 +160,13 @@
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea id="message" name="message" placeholder="Your Message" maxlength="200" required></textarea>
         <span id="charCount">200 characters remaining</span>
-        <button type="submit">Send Message</button>
+        <button class="animate-button">Send Message</button>
       </form>
     </div>
   </section>
+  <footer>
+    <p>&copy; 2023 Alex Lanser. All rights reserved.</p>
+  </footer>
 </body>
 
 </html>
