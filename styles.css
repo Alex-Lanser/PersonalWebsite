@@ -49,17 +49,22 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #0c0c0c;
+    color: #212121;
     text-decoration: none;
     transition: color 0.3s ease;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    font-weight: 600;
 }
 
 nav ul li a:hover {
-    color: #035b7a;
+    color: #00447c;
 }
 
+nav .active {
+    color: #0b7b9e;
+}
+  
 section {
     padding: 40px 0;
     text-align: center;

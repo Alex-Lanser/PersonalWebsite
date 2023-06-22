@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("charCount").style.color = "red";
         }
         else {
-            document.getElementById("charCount").style.color = "gray"; 
+            document.getElementById("charCount").style.color = "gray";
         }
     });
 });
+
