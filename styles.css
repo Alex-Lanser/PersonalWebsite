@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
@@ -17,7 +17,6 @@ body {
     padding: 20px;
 }
 
-/* Header Styles */
 header {
     background-color: #333;
     color: #fff;
@@ -55,7 +54,6 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #00ABFF;
-    /* Change to your desired hover color */
 }
 
 /* Section Styles */
@@ -65,10 +63,15 @@ section {
 }
 
 section h1,
-section h2,
+section h2 {
+    margin-top: 0;
+    color: black;
+    text-decoration: underline;
+}
+
 section h3 {
     margin-top: 0;
-    color: #333;
+    color: black;
 }
 
 .project {
@@ -91,7 +94,6 @@ section h3 {
     color: #888;
 }
 
-/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
@@ -102,14 +104,14 @@ input {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px;
-    font-family: "Arial", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 textarea {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px;
-    font-family: "Arial", sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: 200px;
     height: 100px;
     resize: none;
@@ -117,7 +119,7 @@ textarea {
 
 input::placeholder,
 textarea::placeholder {
-    font-family: "Arial", sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #999;
 }
 
@@ -149,4 +151,26 @@ section:last-of-type {
 
 button {
     margin-top: 5px;
+}
+
+.project a {
+    font-size: 10px;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: gray;
+}
+
+.scrolling {
+    height: 75%;
+    width: 75%;
+}
+
+.embedded {
+    height: 75%;
+    width: 75%;
 }

@@ -6,6 +6,9 @@
   <title>Alex Lanser</title>
   <link rel="icon" type="image/x-icon" href="/images/alex.jpg">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <script src="script.js"></script>
 </head>
 
@@ -39,14 +42,67 @@
     <div class="container">
       <h2>Projects</h2>
       <div class="project">
-        <h3>Project 1</h3>
-        <img src="project1.jpg" alt="Project 1">
-        <p>Description of project 1</p>
+        <h3>Electronic Lock</h3>
+        <img class="embedded" src="images/embedded.jpg" alt="Electronic Lock">
+        <p>Embedded Systems at MSOE project on the MSOE STM32 micoprocessor development board.</p>
+        <p>Ask the user to guess a 4-digit password. If the user guesses correctly, then a 'success' tune will play
+          and the LEDs will do an 'unlock' pattern. If the user guesses incorrectly, then an 'incorrect' tune will play
+          and the LEDs will flash. </p>
+        <p>Developed ARM Assembly and C code to bring together the touchpad, LCD screen, LEDs, and speaker. Debugged
+          successfully by going through registers to see what values are entering and exiting.</p>
       </div>
       <div class="project">
-        <h3>Project 2</h3>
-        <img src="project2.jpg" alt="Project 2">
-        <p>Description of project 2</p>
+        <h3>Jurassic Park</h3>
+        <img src="images/jurassic.png" alt="Jurassic Park">
+        <br>
+        <a class="project" href="https://github.com/Alex-Lanser/CS3841/tree/main/Lab%205-JurrasicPark"
+          target="_blank">Project's
+          Github</a>
+        <p>Design of Operating Systems at MSOE C project.</p>
+        <p>Simulate a park where 60 visitors will visit over a period of 60 seconds, but only 20 visitors
+          can be in the park at a given time. Each visitor must obtain a ticket, go through the museum, board a tour
+          car,
+          go on the tour, enter the gift shop and then leave the park. Drivers must sell tickets to the visitors and
+          drive the cars when they are full.</p>
+        <p>Developed entirely in C. Uses threads and thread tasks to simulate each of the visitors, drivers, and cars.
+          Uses mutex semaphores
+          to protect critical sections of code, such as acquiring a driver to buy a ticket or to drive a car. Uses
+          semaphores to communicate events
+          between tasks, such as to awaken a driver or signal a mode change. Used resource semaphores to control access
+          to the park, number of tickets
+          available, and the number of people allowed in the gift shop and museum.</p>
+      </div>
+      <div class="project">
+        <h3>3D Image Displayer</h3>
+        <img src="images/dolphin.png" alt="3D Dolphin">
+        <br>
+        <a class="project" href="https://github.com/Alex-Lanser/CS3210/tree/master/Lab09"
+          target="_blank">Project's
+          Github</a>
+        <p>Computer Graphics at MSOE C++ project.</p>
+        <p>Display a read STL file in 3D. Be able to perform transforms on the image including rotating, scaling and
+          transcribing.
+        </p>
+        <p>Developed entiraly in C++ and uses previous classes that were made throughout the whole quarter. Calculate
+          what
+          a matrix should be depending on what the user wants to do (scale, rotate, change color).
+        </p>
+      </div>
+      <div class="project">
+        <h3>LED Scrolling Text at DDC</h3>
+        <img class="scrolling" src="images/scrolling.jpg" alt="Scrolling Display">
+        <p>At my second year internship with Digital Design Corporation.</p>
+        <p>Prove that scrolling text is possible on their new RGB LED display that consisted of 8x8 LED matrices
+          connected to form an
+          8x2 rectangular display. This display will be used in the future Digital Design Corporation devices.</p>
+        <p>Developed using python and a raspberry pi. Used installed libraries through a raspberry pi terminal and drove
+          the display
+          with the raspberry pi. Successfully debugged to ensure that the written tests worked correctly and proved that
+          the scrolling
+          text was possible to an extent. Later went on my own to figure out how to pull real time weather data using
+          APIs and then
+          display the data on the display.
+        </p>
       </div>
     </div>
   </section>
@@ -64,4 +120,5 @@
     </div>
   </section>
 </body>
+
 </html>
