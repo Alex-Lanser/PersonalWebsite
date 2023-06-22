@@ -2,7 +2,7 @@
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #eaeaea;
-    height: 100%;
+    overflow-x: hidden; 
 }
 
 .container {
