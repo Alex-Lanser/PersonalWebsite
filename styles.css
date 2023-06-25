@@ -23,16 +23,18 @@ header {
     background-color: #0c0c0c;
     color: #eaeaea;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #dddace;
+    background-color: #eaeaea;
     width: 100%;
-    padding: 10px 0;
+    padding: 25px 0;
     z-index: 100;
+    border-bottom: 1px solid #000;
 }
 
 nav ul {
@@ -53,8 +55,8 @@ nav ul li a {
     text-decoration: none;
     transition: color 0.3s ease;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 nav ul li a:hover {
@@ -234,14 +236,14 @@ textarea::placeholder {
 }
 
 footer {
-    background-color: #c6c3b6;
+    background-color: #eaeaea;
     color: #0c0c0c;
     padding: 20px;
     text-align: left;
-    margin-left: 50px;
     display: flex;
     position: absolute;
     width: 100%;
+    border-top: 1px solid #000;
 }
 
 .social-icons { 
