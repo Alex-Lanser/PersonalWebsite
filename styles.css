@@ -3,14 +3,14 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #eaeaea;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 .container {
@@ -35,6 +35,8 @@ nav {
     padding: 25px 0;
     z-index: 100;
     border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul {
@@ -43,6 +45,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    margin-right: 50px;
 }
 
 nav ul li {
@@ -54,9 +57,8 @@ nav ul li a {
     color: #212121;
     text-decoration: none;
     transition: color 0.3s ease;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 900;
 }
 
 nav ul li a:hover {
@@ -66,7 +68,7 @@ nav ul li a:hover {
 nav .active {
     color: #0b7b9e;
 }
-  
+
 section {
     padding: 40px 0;
     text-align: center;
@@ -114,22 +116,21 @@ input {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 textarea {
     margin-bottom: 10px;
     padding: 10px;
     border: 1px;
-    font-family: 'Roboto', sans-serif;
     width: 200px;
     height: 100px;
     resize: none;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 input::placeholder,
 textarea::placeholder {
-    font-family: 'Roboto', sans-serif;
     color: #999;
 }
 
@@ -147,13 +148,12 @@ textarea::placeholder {
 .project a {
     font-size: 12px;
     color: #00447c;
-    font-family: 'Roboto', sans-serif;
 }
 
 .container p {
-    font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    color: #212121;
+    color: #313131;
+    font-weight: 600;
 }
 
 .scrolling {
@@ -180,59 +180,44 @@ textarea::placeholder {
 
 .skills-list li {
     margin-bottom: 15px;
-    font-family: 'Roboto', sans-serif;
     color: #212121;
     font-size: 18px;
 }
 
 .container li {
-    font-family: 'Roboto', sans-serif;
     color: #212121;
     font-size: 16px;
     margin-bottom: 15px;
 }
 
 #title {
-    font-family: 'Roboto', sans-serif;
     color: #0c0c0c;
     font-size: 20px;
     font-weight: bolder;
     margin-top: 0px;
 }
 
-.sidebar-left,
-.sidebar-right {
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 50px;
-    background-color: #c6c3b6;
-}
-
-.sidebar-left {
-    left: 0;
-}
-
-.sidebar-right {
-    right: 0;
-}
-
 .animate-button {
     padding: 10px 20px;
-    background-color: #dddace;
+    background-color: #d2d2d2;
     border: none;
-    transition: transform 0.3s ease;
-    margin-top: 5px;
+    transition: background-color 0.3s ease;
+    transition: transform 0.2s ease;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #bababa;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bolder;
 }
 
 .animate-button:hover {
-    transform: scale(1.1);
-    margin-top: 5px;
+    margin-top: 10px;
+    background-color: #0b7b9e
 }
 
 .animate-button:active {
-    transform: scale(0.9);
-    margin-top: 5px;
+    transform: scale(0.8);
+    margin-top: 10px;
 }
 
 footer {
@@ -246,7 +231,7 @@ footer {
     border-top: 1px solid #000;
 }
 
-.social-icons { 
+.social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
