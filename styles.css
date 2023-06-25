@@ -208,6 +208,7 @@ textarea::placeholder {
     border: 1px solid #bababa;
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: bolder;
+    cursor: pointer;
 }
 
 .animate-button:hover {
