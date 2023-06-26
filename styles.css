@@ -85,7 +85,7 @@ section h2 {
 
 section h3 {
     margin-top: 0;
-    color: #212121;
+    color: #000000;
 }
 
 .project {
@@ -155,7 +155,7 @@ textarea::placeholder {
 .container p {
     font-size: 18px;
     color: #313131;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .scrolling {
@@ -184,6 +184,7 @@ textarea::placeholder {
     margin-bottom: 15px;
     color: #212121;
     font-size: 18px;
+    font-weight: 500;   
 }
 
 .container li {
