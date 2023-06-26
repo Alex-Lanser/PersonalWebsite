@@ -72,6 +72,7 @@ nav .active {
 section {
     padding: 40px 0;
     text-align: center;
+    clear: both;
 }
 
 section h1,
@@ -245,4 +246,16 @@ footer {
 .social-icons img {
     width: 30px;
     height: 30px;
+}
+
+#home {
+    margin-left: 150px;
+    float: left;
+    width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.home-photo {
+    margin-left: 100px;
 }
