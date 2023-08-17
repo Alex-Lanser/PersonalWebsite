@@ -163,6 +163,11 @@ textarea::placeholder {
     width: 75%;
 }
 
+.extension {
+    height: 60%;
+    width: 60%;
+}
+
 .embedded {
     height: 75%;
     width: 75%;
@@ -263,3 +268,4 @@ footer {
 .home-photo {
     margin-left: 100px;
 }
+
