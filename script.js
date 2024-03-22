@@ -1,3 +1,4 @@
+// Character count functionality
 document.addEventListener("DOMContentLoaded", function () {
     var messageInput = document.getElementById("message");
     var charCount = document.getElementById("charCount");
@@ -18,3 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Alphabetically sort skills list
+document.addEventListener("DOMContentLoaded", function () {
+    const skillsList = document.querySelector('.skills-list');
+    const skillsItems = Array.from(skillsList.children);
+
+    skillsItems.sort((a, b) => a.textContent.localeCompare(b.textContent));
+
+    skillsList.innerHTML = '';
+
+    skillsItems.forEach(item => {
+        skillsList.appendChild(item);
+    });
+});
